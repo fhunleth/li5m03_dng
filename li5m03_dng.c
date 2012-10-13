@@ -86,7 +86,7 @@ int todng(const char *inputname,
     TIFFSetField (tif, TIFFTAG_SAMPLESPERPIXEL, 1);
     TIFFSetField (tif, TIFFTAG_PLANARCONFIG, PLANARCONFIG_CONTIG);
     TIFFSetField (tif, TIFFTAG_CFAREPEATPATTERNDIM, CFARepeatPatternDim);
-    TIFFSetField (tif, TIFFTAG_CFAPATTERN, 4, "\001\0\002\001");
+    TIFFSetField (tif, TIFFTAG_CFAPATTERN, 4, "\002\001\001\0");
     TIFFSetField (tif, TIFFTAG_LINEARIZATIONTABLE, 256, curve);
     TIFFSetField (tif, TIFFTAG_WHITELEVEL, 1, &white);
 
